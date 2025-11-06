@@ -12,3 +12,6 @@ When solving the problem, I quickly realized that it's generally infeasible to h
 Then, I realized that you can re-measure and re-use just one qubit to act as a "binary digit decider" (1 or 0), and continuously append that result to an array.
 
 All we have to do is to convert that binary array into a single interger, which can be done by multiply each digit in the binary array by its respective power of 2!
+
+Realistically, it's not possible to repeatedly measure 1 qubit in a single run, so to express all 2^32 digits you would you need 32 different qubits and observe them once.
+However, the beauty is that they need not be entangled; and that's what makes this (simple) solution work!
